@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CategoriesController">
+
+   <children>
+      <ImageView fitHeight="712.0" fitWidth="900.0" layoutX="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/shopper7.jpg" />
+         </image>
+      </ImageView>
+   
+      <Button fx:id="btnVegetables" contentDisplay="TOP" layoutX="55.0" layoutY="207.0" mnemonicParsing="false" onAction="#goToVegetables" text="Veggies &amp; Fruits" textFill="#479a83">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Veggies.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+         <Button fx:id="btnDairy" contentDisplay="TOP" layoutX="331.0" layoutY="203.0" mnemonicParsing="false" onAction="#goToDairy" text="Meat &amp; Dairy" textFill="#479a83">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Dairy.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnSnacks" contentDisplay="TOP" layoutX="605.0" layoutY="202.0" mnemonicParsing="false" onAction="#goToSnacks" text="Snacks &amp; Drinks" textFill="#479a83">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Snacks.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      
+      
+      <Label fx:id="lblCatalig" contentDisplay="TOP" layoutX="310.0" layoutY="122.0" text="Grab Your Groceries !!" textFill="#141414">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font></Label>
+      <Button layoutX="803.0" layoutY="26.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="26.0" prefWidth="76.0" text="Logout" textFill="#479a83">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="694.0" layoutY="26.0" mnemonicParsing="false" onAction="#goToCatalogExpenses" prefHeight="27.0" prefWidth="94.0" text="Expenditure" textFill="#479a83">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Button>
+      <Label fx:id="lblUserName" layoutX="70.0" layoutY="53.0" prefHeight="27.0" prefWidth="299.0" text="Hola," textFill="#479a83">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="591.0" layoutY="26.0" mnemonicParsing="false" onAction="#goToOrderHistory" prefHeight="27.0" prefWidth="94.0" text="Order History" textFill="#479a83">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="256.0" layoutY="417.0" prefHeight="249.0" prefWidth="350.0" />
+      <ImageView fitHeight="249.0" fitWidth="252.0" layoutX="307.0" layoutY="437.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sale.jpg" />
+         </image></ImageView>
+      <Label layoutX="338.0" layoutY="405.0" prefHeight="17.0" prefWidth="187.0" text="Coming Soooooon !!!" textFill="#0d0d0d">
+         <font>
+            <Font name="Chakra Petch SemiBold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
